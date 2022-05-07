@@ -1,5 +1,8 @@
 env/
+model/
 __pycache__/
 
-*.jpeg
 *.bag
+*.npy
+*.sh.o*
+*.sh.e*
