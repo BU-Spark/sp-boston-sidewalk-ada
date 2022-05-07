@@ -47,10 +47,7 @@ def main(args):
     labels = {
             'concrete': FrameLabel('concrete'),
             'brick': FrameLabel('brick'),
-            'asphalt': FrameLabel('asphalt'),
-            'dirt': FrameLabel('dirt'),
-            'tile': FrameLabel('tile'),
-            'gravel': FrameLabel('gravel')
+            'asphalt': FrameLabel('asphalt')
     }
 
     try:
@@ -103,15 +100,6 @@ def main(args):
             elif pressed_key in 'bB':
                 print(f'{current_frame}: BRICK')
                 labels['brick'].append_frame(color_image, depth_image, accel_data, gyro_data)
-            elif pressed_key in 'gG':
-                print(f'{current_frame}: GRAVEL')
-                labels['gravel'].append_frame(color_image, depth_image, accel_data, gyro_data)
-            elif pressed_key in 'tT':
-                print(f'{current_frame}: TILE')
-                labels['tile'].append_frame(color_image, depth_image, accel_data, gyro_data)
-            elif pressed_key in 'dD':
-                print(f'{current_frame}: DIRT')
-                labels['dirt'].append_frame(color_image, depth_image, accel_data, gyro_data)
             elif pressed_key == chr(27): #ESC
                 break
             else:
