@@ -1,5 +1,6 @@
 env/
 model/
+data/
 __pycache__/
 
 *.bag
