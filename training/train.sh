@@ -12,9 +12,6 @@ do
     python train.py
 done
 
-echo "Starting tuning..."
-python tune.py
-
 echo "Starting evaluation..."
 python evaluate.py
 

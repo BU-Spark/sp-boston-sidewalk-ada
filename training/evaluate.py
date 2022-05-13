@@ -9,5 +9,6 @@ TEST_CLASS_PATHS = ('batches/concrete/color/test',
 test_data = SurfaceDataSequence(TEST_CLASS_PATHS, 32)
 
 model = tf.keras.models.load_model('model')
-model.evaluate(test_data)
+model.evaluate(test_data, verbose=2)
+
 
